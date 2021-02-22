@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Logger.addLogAdapter(new AndroidLogAdapter(PrettyFormatStrategy.newBuilder()
-                .showThreadInfo(true)
-                .methodCount(2)
-                .build()));
-//        Logger.addLogAdapter(new AndroidLogAdapter());
+//        Logger.addLogAdapter(new AndroidLogAdapter(PrettyFormatStrategy.newBuilder()
+//                .showThreadInfo(true)
+//                .methodCount(2)
+//                .build()));
+        Logger.addLogAdapter(new AndroidLogAdapter());
     }
 
     public void printMsg(View view) {
